@@ -3,9 +3,8 @@
 This project is a 3D web application built using HTML, JavaScript, and THREE.js. You can access the application using the following link:
 
 **Live Project URL:**  
-[http://users.sussex.ac.uk/~pv88/3dapp/assignment/sitemap.html](http://users.sussex.ac.uk/~pv88/3dapp/assignment/index.html)
+[http://users.sussex.ac.uk/~pv88/3dapp/assignment/sitemap.html](http://users.sussex.ac.uk/~pv88/3dapp/assignment/sitemap.html)
 
----
 
 ## Folder Structure
 
@@ -22,7 +21,6 @@ This project is a 3D web application built using HTML, JavaScript, and THREE.js.
     - `sword_opening.glb`
     - `sword_tamam.glb`
 
----
 
 ## How to Use
 
@@ -30,12 +28,10 @@ This project is a 3D web application built using HTML, JavaScript, and THREE.js.
 2. Interact with the 3D models and interface.
 3. Use the navigation to explore various pages related to each object.
 
----
 
 ## Notes
 
-- This project is hosted on the University of Sussex web server but it is also available in github: #putlink 
+- This project is hosted on the University of Sussex web server but it is also available in github:[https://github.com/paulaxho/web3d](https://github.com/paulaxho/web3d) 
 - All the blender files for the models are contained in the `assignment_modelling` folder along with af 
 
----
 
