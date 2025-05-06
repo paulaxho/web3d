@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About - Albanian Heritage Museum</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/6ac3910c4e.js" crossorigin="anonymous"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Albanian Heritage Museum</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown">Artifacts</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="qeleshe.html">Qeleshe</a></li>
+            <li><a class="dropdown-item" href="sword.html">Skanderbeg's Sword</a></li>
+            <li><a class="dropdown-item" href="cifteli.html">Çifteli</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="reference.html">References</a></li>
+        <li class="nav-item"><a class="nav-link active" href="sitemap.html">Site Map</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Spacer -->
+  <div style="height: 90px;"></div>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    <h1 class="mb-4">About This Project</h1>
+
+    <!-- 3D Model Creation -->
+    <section class="mb-5">
+      <h2>3D Model Creation</h2>
+      <p><strong>Qeleshe</strong>: Modeled in Blender with custom displacement, roughness, and ambient occlusion maps to simulate felt texture. Normal maps were converted from DirectX to OpenGL for correct shading.</p>
+      <p><strong>Skanderbeg's Sword</strong>: Created in Blender using clean geometry and a PBR material setup. Textures include base color, roughness, and metalness maps. An alternate GLB with an embedded animation was exported using keyframed transforms to simulate the sword "opening" motion.</p>
+      <p><strong>Çifteli</strong>: Built in Blender with layered materials simulating wood grain and fabric. Includes multiple texture maps (bump, normal, diffuse, height) with color ramps and ambient occlusion for realism. Baked and optimized for performance.</p>
+    </section>
+
+    <!-- Design & Implementation -->
+    <section class="mb-5">
+      <h2>Design & Implementation</h2>
+      <p>The application follows the MVC pattern:</p>
+      <ul>
+        <li><strong>Model:</strong> .glb files and texture assets created in Blender.</li>
+        <li><strong>View:</strong> Responsive HTML5 and CSS3 styled with Bootstrap 5.</li>
+        <li><strong>Controller:</strong> JavaScript (Three.js) for rendering, user interaction, camera controls, and animation toggles.</li>
+      </ul>
+      <p>Bootstrap was chosen for its grid system, responsiveness, and clean UI components. Three.js was used instead of alternatives like Babylon.js due to its mature ecosystem, flexibility, and ease of integration with custom shaders and loaders.</p>
+    </section>
+
+    <!-- Media & Interaction -->
+    <section class="mb-5">
+      <h2>Media & Interaction</h2>
+      <p>The app includes:</p>
+      <ul>
+        <li>Audio playback for the Çifteli instrument with a play/stop toggle button.</li>
+        <li>Interactive Open Sword button that dynamically loads an animated GLB model and plays a synchronized sound. Button toggles to “Close Sword” to revert back to the static model.</li>
+        <li>Camera presets (front, side, top, isometric) for better 3D object viewing.</li>
+        <li>Interactive controls to rotate objects, toggle wireframes, and reset views.</li>
+        <li>Integrated post-processing effects (toon shader, FXAA) and a custom material logic flow in Blender for realism.</li>
+      </ul>      
+    </section>
+
+    <!-- Accessibility & Testing -->
+    <section class="mb-5">
+      <h2>Accessibility & Testing</h2>
+      <p>The site is designed with accessibility in mind:</p>
+      <ul>
+        <li>Buttons use clear labels and icons for visual clarity.</li>
+        <li>Color contrast checked to meet WCAG guidelines.</li>
+        <li>Layout tested on Chrome, Firefox, Safari (macOS + Windows)</li>
+        <li>Responsive at mobile, tablet, and desktop breakpoints.</li>
+      </ul>
+    </section>
+
+    <!-- Publication & Hosting -->
+    <section>
+      <h2>Deployment</h2>
+      <p>The application is hosted on the university ITS web server and the codebase is available on GitHub. It was packaged and tested using Visual Studio Code with Live Server.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-2 small">&copy; 2025 Albanian Heritage Museum</p>
+      <div>
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-github fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

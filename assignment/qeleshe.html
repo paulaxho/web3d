@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Qeleshe - Albanian Heritage Museum</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/6ac3910c4e.js" crossorigin="anonymous"></script>
+
+  <!-- GSAP for smooth tweens -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Albanian Heritage Museum</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown">Artifacts</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="qeleshe.html">Qeleshe</a></li>
+            <li><a class="dropdown-item" href="sword.html">Skanderbeg's Sword</a></li>
+            <li><a class="dropdown-item" href="cifteli.html">Çifteli</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="reference.html">References</a></li>
+        <li class="nav-item"><a class="nav-link active" href="sitemap.html">Site Map</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Spacer to push content below navbar -->
+<div style="height: 90px;"></div>
+
+<!-- Main Content -->
+<main class="container py-5">
+  <section class="text-center mb-5">
+    <h1 class="display-4">Qeleshe</h1>
+    <p class="lead">The qeleshe is a traditional Albanian felt cap, proudly worn as a symbol of national identity. Its design varies regionally and represents strength, honor, and heritage.</p>
+  </section>
+
+  <section class="mb-5 text-center">
+    <!-- Three.js Canvas -->
+    <div
+    id="qelesheModel"
+    style="
+      width: 600px;       /* ← fixed 600px wide */
+      height: 350px;
+      border-radius: 1rem;
+      overflow: hidden;
+      margin: -30px auto 0;     /* ← centers it horizontally */
+    "
+  ></div>
+    
+    <!-- Control Buttons -->
+    <div class="mt-4">
+      <button id="rotateBtn" class="btn btn-outline-danger rounded-pill me-2">Start Rotation</button>
+      <button id="wireframeBtn" class="btn btn-outline-danger rounded-pill me-2">Show Wireframe</button>
+      <button id="resetBtn" class="btn btn-outline-secondary rounded-pill">Reset View</button>
+    </div>
+
+    <div class="mt-3">
+      <button id="btnFront" class="btn btn-outline-primary rounded-pill me-2">Front View</button>
+      <button id="btnSide"  class="btn btn-outline-primary rounded-pill me-2">Side View</button>
+      <button id="btnTop"   class="btn btn-outline-primary rounded-pill me-2">Top View</button>
+      <button id="btnIso"   class="btn btn-outline-primary rounded-pill">Isometric</button>
+      <button id="toggleAmbient" class="btn btn-outline-warning rounded-pill me-2">Toggle Ambient Light</button>
+    </div>
+  </section>
+
+  <!-- Details Section -->
+  <section class="mb-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card h-100 detail-card">
+          <div class="card-body">
+            <h2 class="card-title"><i class="fas fa-landmark me-2 text-danger"></i>Historical Significance</h2>
+            <p class="card-text">The qeleshe dates back centuries, often worn by warriors, villagers, and cultural leaders across Albania and Kosovo. It remains a strong symbol in folk dances and festivals today.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100 detail-card">
+          <div class="card-body">
+            <h2 class="card-title"><i class="fas fa-scroll me-2 text-danger"></i>Materials &amp; Crafting</h2>
+            <p class="card-text">Made entirely of wool, the qeleshe is hand-crafted using traditional felting techniques. The process involves soaking, pressing, and carefully shaping the wool into the iconic dome structure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+  <div class="container">
+    <p class="mb-2 small">&copy; 2025 Albanian Heritage Museum</p>
+    <div>
+      <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-github fa-lg"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Load Three.js Scene (IMPORTANT: as a module) -->
+<script type="module" src="qeleshe_script.js"></script>
+
+</body>
+</html>
