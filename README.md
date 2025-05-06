@@ -2,7 +2,7 @@
 
 This project is a 3D web application built using HTML, JavaScript, and THREE.js. You can access the application using the following link:
 
-🔗 **Live Project URL:**  
+**Live Project URL:**  
 [http://users.sussex.ac.uk/~pv88/3dapp/assignment/sitemap.html](http://users.sussex.ac.uk/~pv88/3dapp/assignment/index.html)
 
 ---
