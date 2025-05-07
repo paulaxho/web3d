@@ -50,12 +50,13 @@ function init() {
   // Load GLB model
   const loader = new GLTFLoader();
   loader.load(
-    'models/cifteli.glb', // <-- Update this path if needed
+    'models/cifteli.glb', 
     (gltf) => {
       model = gltf.scene;
       centerModel(model);
-      model.position.y += 0.5;
-      model.scale.set(4, 4, 4); // Adjust if needed for sword proportions
+      model.position.y += 0.8;
+      model.position.x += 0.8;
+      model.scale.set(4, 4, 4); 
       model.traverse(child => {
         if (child.isMesh) {
           child.castShadow = true;
@@ -144,7 +145,7 @@ function resetView() {
   controls.update();
 }
 
-// Audio playback for çifteli
+// sound for çifteli
 const audio = new Audio('media/cifteli-sound.mp3');
 const playBtn = document.getElementById('playSoundBtn');
 
@@ -164,7 +165,6 @@ playBtn.addEventListener('click', () => {
   }
 });
 
-// When audio finishes, reset button automatically
 audio.addEventListener('ended', () => {
   playBtn.textContent = 'Play Sound';
   isPlaying = false;

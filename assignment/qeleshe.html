@@ -49,7 +49,6 @@
   </div>
 </nav>
 
-<!-- Spacer to push content below navbar -->
 <div style="height: 90px;"></div>
 
 <!-- Main Content -->
@@ -60,19 +59,8 @@
   </section>
 
   <section class="mb-5 text-center">
-    <!-- Three.js Canvas -->
-    <div
-    id="qelesheModel"
-    style="
-      width: 600px;       /* ← fixed 600px wide */
-      height: 350px;
-      border-radius: 1rem;
-      overflow: hidden;
-      margin: -30px auto 0;     /* ← centers it horizontally */
-    "
-  ></div>
+    <div id="qelesheModel" style="width:1200px; height:350px; border-radius:1rem; overflow:hidden; margin:-30px auto 0;"></div>
     
-    <!-- Control Buttons -->
     <div class="mt-4">
       <button id="rotateBtn" class="btn btn-outline-danger rounded-pill me-2">Start Rotation</button>
       <button id="wireframeBtn" class="btn btn-outline-danger rounded-pill me-2">Show Wireframe</button>
@@ -127,7 +115,6 @@
 <!-- Bootstrap Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Load Three.js Scene (IMPORTANT: as a module) -->
 <script type="module" src="qeleshe_script.js"></script>
 
 </body>

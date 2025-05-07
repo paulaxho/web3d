@@ -44,7 +44,7 @@ function init() {
   dirLight.castShadow = true;
   scene.add(dirLight);
 
-  // Load default sword model
+  // Load sword model
   const loader = new GLTFLoader();
   loader.load(
     'models/sword_tamam.glb',
@@ -147,7 +147,6 @@ function openSwordAnimation() {
     const loader = new GLTFLoader();
   
     if (!swordOpened) {
-      // Remove current model
       if (model) scene.remove(model);
       if (sound) sound.pause();
   
@@ -172,11 +171,10 @@ function openSwordAnimation() {
         button.textContent = 'Close Sword';
       });
     } else {
-      // Remove animated model
       if (model) scene.remove(model);
       if (sound) sound.pause();
   
-      // Load static sword again
+      // static sword again
       loader.load('models/sword_tamam.glb', (gltf) => {
         model = gltf.scene;
         centerModel(model);

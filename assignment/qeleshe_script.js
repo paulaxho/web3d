@@ -42,7 +42,7 @@ function init() {
   controls.enableDamping = true;
   controls.autoRotate = autoRotate;
 
-  // Ambient Light only
+  // Ambient Light 
   ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
   scene.add(ambientLight);
 

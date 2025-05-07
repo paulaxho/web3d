@@ -12,16 +12,16 @@ h1, h5 {
   font-family: 'Playfair Display', serif;
 }
 
-/* ======== NAVBAR (Better Height) ======== */
+/* ======== NAVBAR ======== */
 .navbar {
-    background-color: #121212 !important; /* softer dark */
-    padding-top: 1.2rem;  /* More top padding */
-    padding-bottom: 1.2rem; /* More bottom padding */
+    background-color: #121212 !important; 
+    padding-top: 1.2rem;  
+    padding-bottom: 1.2rem; 
   }
   
   .navbar-brand {
     font-weight: 500;
-    font-size: 1.6rem; /* Slightly larger brand */
+    font-size: 1.6rem; 
     letter-spacing: 0.5px;
   }
   
@@ -40,7 +40,6 @@ h1, h5 {
 /* ======== HERO SECTION ======== */
 .hero {
   background: url('assets/images/alb_muse.jpg') no-repeat center 0%/cover;
-  /*         ^^^ move center down by 30% */
   height: 90vh;
   position: relative;
   display: flex;
