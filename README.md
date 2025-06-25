@@ -1,5 +1,4 @@
-# 3D Web Application – Assignment
-
+# 3D Web Application 
 This project is a 3D web application built using HTML, JavaScript, and THREE.js. You can access the application using the following link:
 
 **Live Project URL:**  
